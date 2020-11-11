@@ -9,10 +9,9 @@ export default class Header extends Component{
         <div className="header">
             <h1>Doug Family</h1>
             <form>
-                <label>Pesquisar:</label>
                 <input 
                 type="search" 
-                placeholder="Personagem"
+                placeholder="Pesquise por Personagem"
                 
                 />
             </form>
