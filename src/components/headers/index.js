@@ -8,7 +8,15 @@ export default class Header extends Component{
         
         <div className="header">
             <h1>Doug Family</h1>
-            <a href="">Adicionar</a>
+            <form>
+                <label>Pesquisar:</label>
+                <input 
+                type="search" 
+                placeholder="Personagem"
+                
+                />
+            </form>
+            
         </div>
         
         )

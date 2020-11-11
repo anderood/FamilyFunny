@@ -10,22 +10,9 @@ export default class Main extends Component{
                     <div className="perfil-img">
                         <img src={avatar} alt="Imagem de Perfil"/>
                     </div>
-                    <h1>Nome do Personagem</h1>
+                    <h1>Doug Funny</h1>
                     <p>
-                    Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Viva Forevis aptent taciti sociosqu ad litora torquent. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Casamentiss faiz malandris se pirulitá.
-                    </p>
-                    <div className="perfil-botao">
-
-                        <a href="">Acessar</a>
-                    </div>
-                </article>
-                <article>
-                    <div className="perfil-img">
-                        <img src={avatar} alt="Imagem de Perfil"/>
-                    </div>
-                    <h1>Nome do Personagem</h1>
-                    <p>
-                    Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Viva Forevis aptent taciti sociosqu ad litora torquent. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Casamentiss faiz malandris se pirulitá.
+                    Doug é uma série animada americana do canal Nickelodeon. Foi o primeiro Nicktoon produzido e exibido, estrelando um garoto de 12 anos chamado Douglas Yancey "Doug" Funnie. Originado de um livro nunca publicado, Doug Got a New Pair of Shoes, do artista e criador da série Jim Jinkins (mesmo criador de Pinky Dinky Doo) e do escritor Joe Aaron.
                     </p>
                     <div className="perfil-botao">
 

@@ -27,6 +27,8 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+    text-align: center;
+    
 }
 
 .list-perfil p{
@@ -34,11 +36,12 @@
     justify-content: center;
     padding: 20px;
     text-align: center;
+    color: #999;
 }
 
 .perfil-botao {
     width: 100%;
-    padding: 20px;
+    
     display: flex;
     justify-content: center;
 }
@@ -47,7 +50,7 @@
     width: 50%;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 14px;
     background:rgb(109 138 19);
     color: #FFF;
     text-decoration: none;
