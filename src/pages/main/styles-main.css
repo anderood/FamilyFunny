@@ -21,6 +21,7 @@
 .perfil-img img{
     width: 200px;
     padding: 20px;
+    border-radius: 100%;
 }
 
 .list-perfil h1{
