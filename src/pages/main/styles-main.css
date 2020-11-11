@@ -1,4 +1,4 @@
-.list-perfil{
+.list-perfil {
     max-width: 600px;
     margin: 20px auto 0;
     padding: 0 20px;
@@ -19,7 +19,7 @@
 }
 
 .perfil-img img{
-    width: 80%;
+    width: 200px;
     padding: 20px;
 }
 
@@ -27,4 +27,29 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+}
+
+.list-perfil p{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.perfil-botao {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.list-perfil a{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background:rgb(109 138 19);
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
 }
