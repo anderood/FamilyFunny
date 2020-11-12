@@ -57,3 +57,16 @@
     text-decoration: none;
     border-radius: 5px;
 }
+
+form {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+form input{
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* color: #000; */
+}

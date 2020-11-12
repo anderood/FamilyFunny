@@ -6,9 +6,13 @@ import { Link } from 'react-router-dom';
 
 export default class Main extends Component{
 
-    state = {
-        perfis: [],
+    constructor(props){
+        super(props);
+        this.state = {
+            perfis: [],
+        }
     }
+    
     componentDidMount(){
         this.loadPerfis();
     };
@@ -19,25 +23,48 @@ export default class Main extends Component{
         console.log(this.state)
 
     }
+
+
+    headleChange(e){
+        e.preventDefault();
+        
+       <Link to={`/perfis/${e.target.value}`} />
+    }
     render(){
 
         const { perfis } = this.state;
         
         return(
-            <div className="list-perfil">
-                {perfis.map( perfil => (
-                    <article>
-                        <div className="perfil-img">
-                            <img src={perfil.img} alt="Imagem de Perfil"/>
-                        </div>
-                        <h1>{perfil.title}</h1>
-                        <p>{perfil.description}</p>
-                        <div className="perfil-botao">
-                            <Link to={`/perfis/${perfil._id}`}>Acessar</Link>
-                        </div>
-                    </article>
-                ))}
-            </div>
+           <div>
+               <form>
+                    <input 
+                    id="inptSearch"
+                    type="search" 
+                    placeholder="Pesquise por Personagem"
+                    // value={}
+                    onChange={this.headleChange}
+                    />
+                </form>
+
+                <div className="list-perfil">
+                    {perfis.map( perfil => (
+                        <article>
+                            <div className="perfil-img">
+                                <img src={perfil.img} alt="Imagem de Perfil"/>
+                            </div>
+                            <h1>{perfil.title}</h1>
+                            <p>{perfil.description}</p>
+                            <div className="perfil-botao">
+                                <Link to={`/perfis/${perfil._id}`}>Acessar</Link>
+                            </div>
+                        </article>
+                    ))}
+                </div>
+
+
+               {/* fim */}
+           </div>
+            
             
         )
     }
