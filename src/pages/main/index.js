@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import avatar from '../../img/avatar.jpg';
+// import avatar from '../../img/avatar.jpg';
 import './styles-main.css';
 import api from '../../services/api';
 import { Link } from 'react-router-dom';
@@ -19,16 +19,26 @@ export default class Main extends Component{
 
     loadPerfis = async () => {
         const response = await api.get('/perfis');
-        this.setState({perfis: response.data.docs})
-        console.log(this.state)
+        this.setState({perfis: response.data.docs});
+        
 
     }
 
 
-    headleChange(e){
+    headleChange = async (e)=>{
         e.preventDefault();
         
-       <Link to={`/perfis/${e.target.value}`} />
+        const keyCode = e.which || e.keyCode
+        const Enter = 13;
+        // console.log(this.setState({perfis: e.target.value}));
+        console.log(this.state);
+
+
+        
+        if(keyCode === Enter){
+            <Link to={`/perfis/5fad55534bf22771dd0adfeb`}>Acessar</Link>
+        }
+        
     }
     render(){
 
@@ -44,11 +54,12 @@ export default class Main extends Component{
                     // value={}
                     onChange={this.headleChange}
                     />
+
                 </form>
 
-                <div className="list-perfil">
+                {/* <div className="list-perfil">
                     {perfis.map( perfil => (
-                        <article>
+                        <article key={perfil._id}>
                             <div className="perfil-img">
                                 <img src={perfil.img} alt="Imagem de Perfil"/>
                             </div>
@@ -59,7 +70,7 @@ export default class Main extends Component{
                             </div>
                         </article>
                     ))}
-                </div>
+                </div> */}
 
 
                {/* fim */}
